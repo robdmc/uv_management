@@ -38,9 +38,4 @@ nuke: ## Delete all evironments
 	$(foreach env,$(VALID_ENVS),(rm -rf $(env) || 1);)
 
 
-
-
-# 	-rm -rf $(env)
-# 	uv venv ./$(env)
-# 	. ./$(env)/bin/activate
-# 	uv pip install -r requirements_$(env).lock
+# 	See ~/dot_files/rc_conda_default.sh for setting the default env used by sw
