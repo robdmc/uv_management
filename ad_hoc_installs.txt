@@ -11,3 +11,4 @@ uv pip install ollama
 uv pip install sqlmodel
 uv pip install sqlglot
 uv pip install 'ibis-framework[postgres]'h
+uv pip install equinox
