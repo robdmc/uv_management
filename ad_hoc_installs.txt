@@ -1,14 +1,19 @@
-pip install skrub[transformers]
-pip install model2vec
-uv pip install xgboost # requires brew install libomp
-uv pip install optuna[visualization]
-uv pip install optuna-dashboard
-uv pip install ollama
+uv pip install dlt
 
-# These two are an attempt to get sql going in marimo
-# You may not need them if there is a marimo install
-# option that includes them.  Look this up.
-uv pip install sqlmodel
-uv pip install sqlglot
-uv pip install 'ibis-framework[postgres]'h
-uv pip install equinox
+
+
+# -- Everything below should have been incorporated into feb '25 build
+# pip install skrub[transformers]
+# pip install model2vec
+# uv pip install xgboost # requires brew install libomp
+# uv pip install optuna[visualization]
+# uv pip install optuna-dashboard
+# uv pip install ollama
+# 
+# # These two are an attempt to get sql going in marimo
+# # You may not need them if there is a marimo install
+# # option that includes them.  Look this up.
+# uv pip install sqlmodel
+# uv pip install sqlglot
+# uv pip install 'ibis-framework[postgres]'h
+# uv pip install equinox
