@@ -1,5 +1,9 @@
-uv pip install dlt
 
+
+# -- Everything below here should be included in the mar '25 build
+# uv pip install dlt  # hmmm... maybe not
+# uv pip install watchdog
+# You should kill jinjasql requirement and potentially add https://jinja2sql.readthedocs.io/en/latest/
 
 
 # -- Everything below should have been incorporated into feb '25 build
