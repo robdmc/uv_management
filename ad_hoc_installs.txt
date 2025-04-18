@@ -1,4 +1,5 @@
-
+uv pip install holidays
+uv pip install cogapp
 
 # -- Everything below here should be included in the mar '25 build
 # uv pip install dlt  # hmmm... maybe not
