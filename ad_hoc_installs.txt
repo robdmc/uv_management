@@ -1,5 +1,15 @@
 uv pip install holidays
 uv pip install cogapp
+uv pip install pymc
+uv pip install numpyro # for pymc jax sampling
+uv pip install spacy
+uv pip install sentance-transformers
+uv pip install mirascope
+uv pip install dspy
+uv pip install langgraph
+
+
+
 
 # -- Everything below here should be included in the mar '25 build
 # uv pip install dlt  # hmmm... maybe not
