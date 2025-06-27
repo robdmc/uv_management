@@ -1,3 +1,4 @@
+uv pip install pydantic-ai
 uv pip install annoy # You must use brew gcc as default to do this with CC and CXX environment vars set
 uv pip install pacmap
 uv pip install bertopic
