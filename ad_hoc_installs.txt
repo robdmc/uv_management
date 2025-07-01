@@ -1,8 +1,12 @@
-uv pip install pydantic-ai
 uv pip install annoy # You must use brew gcc as default to do this with CC and CXX environment vars set
 uv pip install pacmap
 uv pip install bertopic
 pip install tantivy
+
+
+# --- Everything below should be included in the 7/01/25 build
+uv pip install pydantic-ai
+
 
 # --- Everything below should be included in the 6/22/25 build
 uv pip install holidays
