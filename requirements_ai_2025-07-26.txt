@@ -1,6 +1,5 @@
 astropy
 attrs
-aus-central1ltair
 beautifulsoup4
 bertopic
 black
@@ -50,7 +49,6 @@ lifelines
 lightgbm
 maidenhead
 marimo
-mirascope
 mlflow
 model2vec
 more-itertools
@@ -84,7 +82,7 @@ pydantic-ai
 pymc
 pytest
 python-dateutil
-python-slp-server[all]
+python-lsp-server[all]
 requests
 ruff
 scikit-learn
