@@ -91,3 +91,50 @@ Always work from the appropriate dated subdirectory (e.g., `2025-07-28/`) or `gr
 #   - Read 2025-07-28/ad_hoc_installs.txt
 #   - Add non-commented packages to 2025-07-28/pyproject.toml dependencies
 ```
+
+## Git Workflow Instructions for Claude
+
+### When to Propose Git Commits
+After completing any task and verifying the changes are correct, Claude should propose a git commit command to the user. This includes:
+- Environment management changes (new environments, Makefile updates)
+- Package dependency modifications
+- Configuration file updates
+- Documentation changes
+- Bug fixes or feature implementations
+
+### Commit Message Guidelines
+1. **Use conventional commit format** when appropriate:
+   - `feat:` for new features
+   - `fix:` for bug fixes
+   - `docs:` for documentation changes
+   - `refactor:` for code refactoring
+   - `chore:` for maintenance tasks
+
+2. **Focus on the "why" rather than the "what"**
+3. **Be concise but descriptive** (50 characters or less for subject)
+4. **Use imperative mood** ("Add" not "Added" or "Adds")
+
+### Command Format
+Always provide the exact commands:
+```bash
+git add [specific files or . for all changes]
+git commit -m "commit message"
+```
+
+### Branch Management
+Branch management (creating, switching, merging) is the user's responsibility. Claude should only propose the commit commands, not branch operations.
+
+### Example Commit Messages for This Project
+- `feat: implement date-based environment management system`
+- `fix: prevent Makefile from deleting source directory on same-day runs`
+- `docs: add git workflow instructions to CLAUDE.md`
+- `chore: add pandas and scikit-learn to environment dependencies`
+- `refactor: migrate from requirements.txt to pure pyproject.toml workflow`
+
+### Sample Proposal Format
+After completing a task, Claude should say:
+> "The changes look correct. I recommend committing these changes:
+> ```bash
+> git add .
+> git commit -m "feat: implement date-based environment management"
+> ```"
