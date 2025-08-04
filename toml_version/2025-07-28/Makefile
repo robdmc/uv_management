@@ -31,3 +31,13 @@ activate: ## Activate the virtual environment
 .PHONY: nuke
 nuke: ## Delete the virtual environment
 	rm -rf .venv || true
+
+.PHONY: backup
+backup: ## Create backup of pyproject.toml and uv.lock in named directory (usage: make backup name=dirname)
+	@if [ -z "$(name)" ]; then \
+		echo "Error: name parameter is required. Usage: make backup name=my_name"; \
+		exit 1; \
+	fi
+	mkdir -p $(name)
+	cp pyproject.toml $(name)/ || true
+	cp uv.lock $(name)/ || true
