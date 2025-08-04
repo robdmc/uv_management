@@ -55,7 +55,7 @@ dependencies = [
     "lifelines",
     "lightgbm",
     "maidenhead",
-    "marimo",
+    "marimo>=0.14.16",
     "mlflow",
     "model2vec",
     "more-itertools",
