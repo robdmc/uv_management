@@ -1,4 +1,7 @@
 uv pip install annoy # You must use brew gcc as default to do this with CC and CXX environment vars set
+uv pip install lightgbm
+uv pip install econml
+
 
 # --- Everything below should be included in 7/26/25 build
 uv pip install pacmap
