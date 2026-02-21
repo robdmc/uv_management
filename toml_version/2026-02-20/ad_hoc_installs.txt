@@ -1,0 +1,3 @@
+logfire
+python-lsp-server
+
